@@ -8,7 +8,7 @@ include ActionView::Helpers::TextHelper
 vars = {
   full_name: "Mengying Li",
 
-  title: "2nd year CS Student",
+  title: "2nd year Math & CS Student",
 
   profile_categories: {
     "Availability" => content_tag(:p, "Looking for a summer internship.")
@@ -19,8 +19,8 @@ vars = {
       diploma: "Double major in Math & Computer Science joint major and Cognitive Science Human Computer Interaction",
       school: "University of California, San Diego (UCSD)",
       year: "2015 - 2019 (expected)",
-      description: content_tag(:p, "Overall GPA: 3.6") +
-                   content_tag(:p, "Relevant Coursework: Data Structure and Objective Oriented Design, Web Design, Social Computing")
+      description: content_tag(:p, "Overall GPA: 3.4") +
+                   content_tag(:p, "Relevant Coursework: Data Structure and Objective Oriented Design, Computer Organization and Systems Programming, Web Design, Social Computing")
     }
   ],
 
