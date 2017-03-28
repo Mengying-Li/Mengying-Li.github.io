@@ -1,0 +1,341 @@
+doctype html
+html[lang="en"]
+  head
+    meta[charset="utf-8"]
+    meta[name="viewport" content="width=device-width, initial-scale=1"]
+
+    title = full_name
+
+    link[href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css"]
+    link[href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"]
+    link[rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css"]
+    link[rel="stylesheet" href="vendor/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen"]
+    link[href="vendor/animate.css" rel="stylesheet"]
+    link[href="css/styles.css" rel="stylesheet"]
+    link[rel="shortcut icon" href="favicon-vertica.ico" type="image/x-icon"]
+    link[rel="icon" href="favicon.ico" type="image/x-icon"]
+
+  body[data-spy="scroll" data-target="#side-menu"]
+    #page-loader.loader
+      .loading-wrapper
+        .tp-loader.spinner
+        .side-menu-name
+          |  Mengying
+          strong< Li
+        p.side-menu-job = title
+    .side-menu-open.hidden-sm.hidden-xs
+      a.btn.btn-default.side-menu-button[href="#"]
+        i.fa.fa-bars>
+        | MENU
+    .side-menu
+      span#side-menu-close
+        i.fa.fa-times
+      .side-menu-name
+        |  Simon
+        strong< Ninon
+      p.side-menu-job = title
+      nav#side-menu.side-menu-este
+        ul.nav.side-menu-nav
+          - %w[intro education works skills interests portfolio contact].each do |category|
+            li
+              a[href="##{category}"]
+                i.fa.fa-angle-right>
+                = category.capitalize
+      .side-menu-buttons
+        a.btn.btn-side-menu[href="files/resume.pdf"]
+          i.fa.fa-download>
+          | Download my resume
+        a.btn.btn-side-menu[href="mailto:mel116@ucsd.edu"]
+          i.fa.fa-envelope-o>
+          | Send me a message
+
+    section#content-body.container.animated
+      #intro.row
+        .col-md-10.col-sm-10.col-md-offset-2.col-sm-offset-1.clearfix.top-colors
+          .top-color.top-color1
+          .top-color.top-color2
+          .top-color.top-color3
+          .top-color.top-color1
+          .top-color.top-color2
+        .col-md-10.col-sm-10.col-md-offset-2.col-sm-offset-1.resume-container
+          .row
+            .header-buttons.col-md-10.col-md-offset-1
+              a.btn.btn-default.btn-top-resume[href="files/resume.pdf"]
+                i.fa.fa-download
+                span.btn-hide-text Download my resume
+              a.btn.btn-default.btn-top-message[href="mailto:mel116@ucsd.edu"]
+                i.fa.fa-envelope-o
+                span.btn-hide-text Send me a message
+          .profile-intro.row
+            .col-md-4.profile-col
+              .profile-pic
+                .profile-border
+                  img[src="img/profile_picture.jpg" alt=""]
+            .col-md-7
+              h1.intro-title1
+                | Hi, I'm
+                span.color1.bold<
+                  | #{full_name}!
+              h2.intro-title2 = title
+              p
+                | I'm a chinese
+                strong< 2nd year CS student
+                | , at
+                strong<>
+                  | UCSD.
+          .timeline-wrap
+            .timeline-bg
+              section.timeline.profile-infos
+                .line.row.timeline-margin
+                  .content-wrap
+                    .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                    .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height
+                    .col-md-9.bg1.full-height
+                .line.row
+                  .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                  .col-md-2.timeline-progress.hidden-sm.hidden-xs.timeline-title.full-height
+
+                  .col-md-8.content-wrap.bg1
+                    h2.section-title Profile
+                  .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                - profile_categories.each do |category, content|
+                  .line.row
+                    .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                    .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height.timeline-point
+                    .col-md-8.content-wrap.bg1
+                      .line-content
+                        h3.section-item-title-1 = category
+                        == content
+                    .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                .line.row
+                  .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                  .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height.timeline-point
+                  .col-md-8.content-wrap.bg1
+                    .line-content
+                      h3.section-item-title-1 Find Me On
+                      a.btn.btn-default[href="https://www.facebook.com/profile.php?id=100004398077445" target="_blank"]
+                        i.fa.fa-facebook
+                      a.btn.btn-default[href="https://www.linkedin.com/in/%E6%A2%A6%E6%BB%A2-%E6%9D%8E-95381b9a/" target="_blank"]
+                        i.fa.fa-linkedin
+                      a.btn.btn-default[href="https://github.com/chasingfuture" target="_blank"]
+                        i.fa.fa-github
+                  .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+              section#education.timeline.education
+                .line.row.timeline-margin
+                  .content-wrap
+                    .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                    .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height
+                    .col-md-9.bg1.full-height
+                .line.row
+                  .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                  .col-md-2.timeline-progress.hidden-sm.hidden-xs.timeline-title.full-height
+
+                  .col-md-8.content-wrap.bg1
+                    h2.section-title Education
+                  .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                - education.each do |school|
+                  .line.row
+                    .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                    .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height.timeline-education
+                    .col-md-8.content-wrap.bg1
+                      .line-content.line-content-education
+                        h3.section-item-title-1 = school[:diploma]
+                        h4.graduation-time
+                          i.fa.fa-university
+                          | #{ school[:school] } -
+                          span.graduation-date< = school[:year]
+                        .graduation-description == school[:description]
+                    .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+
+              section#works.timeline.work-experience
+                .line.row.timeline-margin
+                  .content-wrap
+                    .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                    .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height
+                    .col-md-9.bg1.full-height
+                .line.row
+                  .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                  .col-md-2.timeline-progress.hidden-sm.hidden-xs.timeline-title.full-height
+                  .col-md-8.content-wrap.bg1
+                    h2.section-title
+                      | Work Experience
+                  .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                - work_experiences.each do |experience|
+                  .line.row
+                    .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                    .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height.timeline-work
+                    .col-md-8.content-wrap.bg1
+                      .line-content.line-content-education
+                        h3.section-item-title-1 = experience[:job_title]
+                        h4.job
+                          i.fa.fa-flag>
+                          | #{ experience[:company] }, #{ experience[:location] }
+                          span.job-date< = experience[:date]
+                        .job-description
+                          == experience[:description]
+                    .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+
+              section#skills.timeline.skills
+                .line.row.timeline-margin
+                  .content-wrap
+                    .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                    .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height
+                    .col-md-9.bg1.full-height
+                .line.row
+                  .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                  .col-md-2.timeline-progress.hidden-sm.hidden-xs.timeline-title.full-height
+                  .col-md-8.content-wrap.bg1
+                    h2.section-title Skills
+                  .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+
+                - skills.each do |category|
+                  .line.row
+                    .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                    .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height.timeline-point
+                    .col-md-8.content-wrap.bg1
+                      .line-content
+                        h3.section-item-title-1 = category[:type]
+                        ul.skills-list
+                          - category[:skills].each do |skill|
+                            li
+                              .progress
+                                .progress-bar[class="#{ category[:progress_bar_type] }" data-percent="#{ skill[:percent] }%" role="progressbar" style="width: #{ skill[:percent] }%;"]
+                                  span.sr-only #{ skill[:percent] }% Complete
+                                span.progress-type = skill[:name]
+                                span.progress-completed = skill[:text]
+                    .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+
+              section#portfolio.timeline.portfolio
+                .line.row.timeline-margin
+                  .content-wrap
+                    .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                    .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height
+                    .col-md-9.bg1.full-height
+                .line.row
+                  .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                  .col-md-2.timeline-progress.hidden-sm.hidden-xs.timeline-title.full-height
+                  .col-md-8.content-wrap.bg1
+                    h2.section-title Portfolio
+                  .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                .line.row
+                  .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                  .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height.timeline-point
+                  .col-md-8.content-wrap.bg1
+                    .line-content
+                      h3.section-item-title-1 Some Works
+                      #portfolio-items-grid.portfolio-items.clearfix
+
+                        - portfolio.each_with_index do |project, index|
+                          .portfolio-item.mix
+                            a.fancybox[href="#fancy#{ index }"]
+                              .hover
+                                p.zoomi
+                                  i.fa.fa-search
+                                p.portfolio-item-title
+                                  strong = project[:name]
+                                  br
+                                  = project[:technologies]
+                              .hover-bg-wrapper
+                                .hover-bg
+                              .portfolio-item-thumbnail
+                                img[src="#{ project[:img_thumb] }" alt="#{ project[:name] } thumbnail"]
+                            .fancy-wrap[id="fancy#{ index }"]
+                              - if project[:type] == :img
+                                img[src="#{ project[:img_full] }" alt="#{ project[:name] } full image"]
+                              - elsif project[:type] == :video
+                                iframe[src="#{ project[:video] }" frameborder="0" allowfullscreen width="1080" height="720"]
+                              .fancy
+                                h2 = project[:name]
+                                == project[:description]
+                  .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+
+              section#contact.timeline
+                .line.row.timeline-margin
+                  .content-wrap
+                    .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                    .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height
+                    .col-md-9.bg1.full-height
+                .line.row
+                  .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                  .col-md-2.timeline-progress.hidden-sm.hidden-xs.timeline-title.full-height
+                  .col-md-8.content-wrap.bg1
+                    h2.section-title Contact
+                  .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                .line.row
+                  .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                  .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height.timeline-mail
+                  .col-md-8.content-wrap.bg1
+                    .line-content.contact-content
+                      h3.section-item-title-1 Send me a message
+                      .row
+                        .col-md-8.contact-form-wrapper
+                          form#contactForm.form[method="post"]
+                            .form-group
+                              input#name.form-control.required[name="name" placeholder="Name" type="text" required]
+                            .form-group
+                              input#email.form-control.required[name="email" placeholder="Email" type="email" required]
+                            .form-group
+                              input#subject.form-control.required[type="text" name="subject" placeholder="Subject" required]
+                            .form-group
+                              textarea#message.form-control.required[name="message" placeholder="Message" rows="5" required]
+                            .form-group
+                              input.btn.btn-default.form-send[type="submit" value="Send!"]
+                        .col-md-4.contact-infos
+                          h4.contact-subtitle-1 Address
+                          p
+                            | 7675 Palmilla Drive #6108
+                            br
+                            |  San Diego, CA 92122
+                            br
+                            |  USA
+                          h4.contact-subtitle-1 Phone
+                          p +1 (858) 699-3197
+                          h4.contact-subtitle-1 Mail
+                          p mel166@ucsd.edu
+                  .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+
+              section.timeline.profile-infos
+                .line.row.timeline-margin.timeline-margin-big
+                  .content-wrap
+                    .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                    .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height
+                    .col-md-9.bg1.full-height
+                .line.row.line-thank-you
+                  .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+                  .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height.timeline-point
+                  .col-md-8.content-wrap.bg1
+                    .line-content
+                      h3.thank-you Thank You!
+                  .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+          footer#footer.row
+            p.quote “Anyone who has never made a mistake has never tried anything new.”
+            p.author Albert Einstein
+
+    #contactSuccess.form-result.modal-wrap
+      .modal-bg
+      .modal-content
+        h4.modal-title
+          i.fa.fa-check-circle
+          |  Success!
+        p Your message has been sent to us.
+    #contactError.form-result.modal-wrap
+      .modal-bg
+      .modal-content
+        h4.modal-title
+          i.fa.fa-times
+          |  Error
+        p There was an error sending your message.
+
+    script[src="vendor/jquery-1.11.1.min.js"]
+    script[src="vendor/bootstrap/js/bootstrap.min.js"]
+    script[src="vendor/jquery.easing.min.js"]
+    script[src="vendor/jquery.mousewheel.min.js"]
+    script[src="vendor/jquery.nicescroll.min.js"]
+    script[src="vendor/jquery.nicescroll.min.js"]
+    script[src="vendor/waypoints.min.js"]
+    script[type="text/javascript" src="vendor/fancybox/source/jquery.fancybox.pack.js"]
+    script[src="vendor/jquery.mixitup.min.js"]
+    script[src="vendor/jquery.validate.min.js"]
+    script[src="vendor/placeholders.jquery.min.js"]
+    script[src="vendor/cross-browser.js"]
+    script[src="js/main.js"]
