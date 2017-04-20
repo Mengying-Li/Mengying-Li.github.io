@@ -123,10 +123,10 @@ vars = {
     },
     {
       name: "VR Classroom",
-      type: :img,
+      type: :video,
       technologies: "Unity, VR",
       img_thumb: "img/vr_thumb.png",
-      img_full: "img/vr_full.png",
+      video: "http://www.youtube.com/embed/lx9LApgjfbw",
       description: content_tag(:p, "Work on front-end application team for implementing the student-side functions") +
                    content_tag(:p, "Implement student's note-taking feature which use VR controller to draw smooth lines on the canvas") +
                    content_tag(:p, "Implement the UX design of the VR controller menu")
