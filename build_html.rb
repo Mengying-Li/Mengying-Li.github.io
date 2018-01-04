@@ -8,7 +8,7 @@ include ActionView::Helpers::TextHelper
 vars = {
   full_name: "Mengying Li",
 
-  title: "2nd year Math & CS Student",
+  title: "3rd year Math & CS Student",
 
   profile_categories: {
     "Availability" => content_tag(:p, "Looking for a summer internship.")
@@ -16,22 +16,34 @@ vars = {
 
   education: [
     {
-      diploma: "Double major in Math & Computer Science joint major and Cognitive Science Human Computer Interaction",
+      diploma: "Math & Computer Science joint major",
       school: "University of California, San Diego (UCSD)",
       year: "2015 - 2019 (expected)",
-      description: content_tag(:p, "Overall GPA: 3.4") +
-                   content_tag(:p, "Relevant Coursework: Data Structure and Objective Oriented Design, Computer Organization and Systems Programming, Web Design, Social Computing")
+      description: content_tag(:p, "Overall GPA: 3.6") +
+                   content_tag(:p, "Relevant Coursework: Data Structure and Objective Oriented Design, Web Design, Advanced Data Structures, Design and Analysis of the Algorithms, Software Engineering, Intro to Machine Learning")
     }
   ],
 
   work_experiences: [
     {
-      job_title: "Web Developer and Research Assistant",
+      job_title: "Software Developer Intern",
+      company: "Nanome Inc",
+      location: "San Diego, USA",
+      date: "06/2017 to 09/2017",
+      description: content_tag(:p, "Implemented a notification board feature in existing VR application using C# in unity") +
+                   content_tag(:p, "Built a 2D portal for people to enter the biology conference room in application using C#") +
+                   content_tag(:p, "Parsed MMCIF format file from the World Protein Bank to the application in C#")
+    },
+    {
+      job_title: "Full Stack Developer",
       company: "Comparative Cognition Lab (UCSD)",
       location: "San Diego, USA",
-      date: "11/2016 to present",
-      description: content_tag(:p, "Code out a database website to store the data of primates through self-learning from scratch in 3 weeks") +
-                   content_tag(:p, "Do research on dogs and bonobos, observe their behavior and make record")
+      date: "02/2017 to 07/2017",
+      description: content_tag(:p, "Designed and implemented a website using nodeJS, mySQL, Handlebars to handle data about primates") +
+                   content_tag(:p, "Coded features such as authentication, data administration, search, …") +
+                   content_tag(:p, "Prepared and presented technical and design proposals to the 20 lab members") +
+                   content_tag(:p, "Troubleshooted and resolved issues reported by end-users") +
+                   content_tag(:p, "Github link: https://github.com/chasingfuture/Database_website")
     },
     {
       job_title: "External Communication and Internal Development Intern",
@@ -43,13 +55,6 @@ vars = {
                    content_tag(:p, "Helped to set business strategy for company’s early developing stage") +
                    content_tag(:p, "Cooperated with founders to built prototype of the website") +
                    content_tag(:p, "Wrote multiple articles on the website including an article with over 3700 clicks on analyzing the rule of effectively using social media (http://www.thu.io/posts/anGphJdCKotjGdMzK )")
-    },
-    {
-      job_title: "Marketing Intern",
-      company: "TUTUroomii",
-      location: "San Diego, USA",
-      date: "09/2015 to 07/2016",
-      description: content_tag(:p, "Attracted over 200 potential users (people from LGBT community) for the app by writing original articles and promote through multiple social media in both US and China")
     },
     {
       job_title: "District Conference Secretary General, Club Leader",
@@ -87,12 +92,17 @@ vars = {
       skills: [
         { name: "HTML/CSS", percent: 90, text: "Proficient" },
         { name: "Java", percent: 90, text: "Proficient" },
+        { name: "C", percent: 90, text: "Proficient" },
+        { name: "C++", percent: 90, text: "Proficient" },
+        { name: "C#", percent: 90, text: "Proficient" },
         { name: "MATLAB", percent: 90, text: "Proficient" },
         { name: "NodeJS", percent: 70, text: "Intermediate Level" },
         { name: "MySQL", percent: 70, text: "Intermediate Level" },
         { name: "JS/jQuery", percent: 70, text: "Intermediate Level" },
-        { name: "C", percent: 70, text: "Intermediate Level" },
-        { name: "C++", percent: 70, text: "Intermediate Level" }
+        { name: "React", percent: 70, text: "Intermediate Level" },
+        { name: "Assembly", percent: 70, text: "Intermediate Level" },
+        { name: "Python", percent: 70, text: "Intermediate Level" },
+        { name: "R", percent: 70, text: "Intermediate Level" },
       ]
     }
   ],
