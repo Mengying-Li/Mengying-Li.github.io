@@ -46,17 +46,6 @@ vars = {
                    content_tag(:p, "Github link: https://github.com/chasingfuture/Database_website")
     },
     {
-      job_title: "External Communication and Internal Development Intern",
-      company: "SuperAcademy",
-      location: "Beijing, China",
-      date: "01/2015 to present",
-      description: content_tag(:p, "Worked as a CS tutor for 3 days in coding summer camp in Changzhou International School") +
-                   content_tag(:p, "Gave a 3-hour lecture for 20 students in Affiliated High School of Peking University about Intro to Cogs") +
-                   content_tag(:p, "Helped to set business strategy for company’s early developing stage") +
-                   content_tag(:p, "Cooperated with founders to built prototype of the website") +
-                   content_tag(:p, "Wrote multiple articles on the website including an article with over 3700 clicks on analyzing the rule of effectively using social media (http://www.thu.io/posts/anGphJdCKotjGdMzK )")
-    },
-    {
       job_title: "District Conference Secretary General, Club Leader",
       company: "Model United Nations (MUN)",
       location: "Beijing, China",
@@ -100,44 +89,47 @@ vars = {
         { name: "MySQL", percent: 70, text: "Intermediate Level" },
         { name: "JS/jQuery", percent: 70, text: "Intermediate Level" },
         { name: "React", percent: 70, text: "Intermediate Level" },
-        { name: "Assembly", percent: 70, text: "Intermediate Level" },
         { name: "Python", percent: 70, text: "Intermediate Level" },
         { name: "R", percent: 70, text: "Intermediate Level" },
+        { name: "Assembly", percent: 70, text: "Intermediate Level" },
       ]
     }
   ],
 
   portfolio: [
     {
-      name: "CCL Database Website",
-      type: :img,
-      technologies: "NodeJS, jQuery, mySQL",
-      img_thumb: "img/ccl_thumb.png",
-      img_full: "img/ccl_full.png",
-      description: content_tag(:p, "Role: Lead Developer.") +
-                   content_tag(:p, "Front-end and back-end development (nodeJS, mySQL, Handlebars") +
-                   content_tag(:p, "Features such as authentication, administration of data, search, ...") +
-                   content_tag(:p, "Conception of the design and of the UX part of the website") +
-                   content_tag(:a, "Available on Github!", href: "https://github.com/Cylix/database_website", target: "_blank")
+      name: "Friend-Zone",
+      type: :video,
+      technologies: "React, firebase",
+      img_thumb: "img/friend_thumb.png",
+      video: "https://www.youtube.com/embed/dQOOcZRRNdo",
+      description: content_tag(:p, "Role: Databse Specialist") +
+                   content_tag(:p, "Introduction: The website seeks to help students make friends based on their mutual courses, to chat and to plan events") +
+                   content_tag(:p, "Wrote component to communicate front-end with the back-end database using React.JS") +
+                   content_tag(:p, "Implemented back-end database using firebase and handled cloud storage using firebase") +
+                   content_tag(:p, "Coded profile page and loading page using React.JS and CSS") +
+                   content_tag(:a, "Website link!", href: "https://friendzoned.us", target: "_blank")
     },
     {
-      name: "Re::Time",
-      type: :img,
-      technologies: "NodeJS, jQuery, mySQL",
-      img_thumb: "img/retime_thumb.png",
-      img_full: "img/retime_full.png",
-      description: content_tag(:p, "Role: Developer.") +
-                   content_tag(:p, "Front-end and back-end development") +
-                   content_tag(:p, "Features such as TODO tasks management, countdown, authentication, ...") + 
-                   content_tag(:a, "Website link!", href: "http://retime.herokuapp.com", target: "_blank")
+      name: "Bitcoin price prediction, machine learning project",
+      type: :video,
+      technologies: "React, firebase",
+      img_thumb: "img/bitcoin_thumb.jpg",
+      video: "https://www.youtube.com/embed/dQOOcZRRNdo",
+      description: content_tag(:p, "Role: Lead Developer") +
+                   content_tag(:p, "Introduction: Tool to predict bitcoin price with LSTM model using a day by day historical price dataset") +
+                   content_tag(:p, "Built the training model of LSTM using python with keras in Jupyter Notebook with my teammates") + 
+                   content_tag(:p, "Successfully get prediction of next day and 5-day trend with smaller error than random walk method")
     },
     {
       name: "VR Classroom",
       type: :video,
-      technologies: "Unity, VR",
+      technologies: "Unity, VR, C#",
       img_thumb: "img/vr_thumb.png",
       video: "http://www.youtube.com/embed/lx9LApgjfbw",
-      description: content_tag(:p, "Work on front-end application team for implementing the student-side functions") +
+      description: content_tag(:p, "Role: Developer") +
+                   content_tag(:p, "Introduction: Virtual reality classroom where students and teachers can communicate through gesture, voice and writing") +
+                   content_tag(:p, "Work on front-end application team for implementing the student-side functions") +
                    content_tag(:p, "Implement student's note-taking feature which use VR controller to draw smooth lines on the canvas") +
                    content_tag(:p, "Implement the UX design of the VR controller menu")
     }
