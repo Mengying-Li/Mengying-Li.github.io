@@ -114,7 +114,7 @@ vars = {
       name: "Bitcoin price prediction, machine learning project",
       type: :video,
       technologies: "React, firebase",
-      img_thumb: "img/bitcoin_thumb.jpg",
+      img_thumb: "img/bitcoin_thumb.png",
       video: "https://www.youtube.com/embed/dQOOcZRRNdo",
       description: content_tag(:p, "Role: Lead Developer") +
                    content_tag(:p, "Introduction: Tool to predict bitcoin price with LSTM model using a day by day historical price dataset") +
