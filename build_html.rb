@@ -19,7 +19,7 @@ vars = {
       diploma: "Math & Computer Science joint major",
       school: "University of California, San Diego (UCSD)",
       year: "2015 - 2019 (expected)",
-      description: content_tag(:p, "Overall GPA: 3.6") +
+      description: content_tag(:p, "Major GPA: 3.6") +
                    content_tag(:p, "Relevant Coursework: Data Structure and Objective Oriented Design, Web Design, Advanced Data Structures, Design and Analysis of the Algorithms, Software Engineering, Intro to Machine Learning")
     }
   ],
