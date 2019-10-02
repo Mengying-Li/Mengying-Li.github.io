@@ -11,7 +11,7 @@ vars = {
   title: "5th year Math & CS Student",
 
   profile_categories: {
-    "Availability" => content_tag(:p, "Looking for a full time software engineering position.")
+    "Availability" => content_tag(:p, "Looking for a full time software engineer position.")
   },
 
   education: [
