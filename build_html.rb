@@ -100,24 +100,23 @@ vars = {
         { name: "English", percent: 90, text: "Advanced Level (TOEFL 109)" }
       ]
     } #,
-    =begin
       
-    {
-      type: "Code Skills",
-      progress_bar_type: "progress-bar-3",
-      skills: [
-        { name: "HTML/CSS", percent: 90, text: "Proficient" },
-        { name: "Java", percent: 90, text: "Proficient" },
-        { name: "C", percent: 90, text: "Proficient" },
-        { name: "C++", percent: 90, text: "Proficient" },
-        { name: "C#", percent: 90, text: "Proficient" },
-        { name: "NodeJS", percent: 70, text: "Intermediate Level" },
-        { name: "MySQL", percent: 70, text: "Intermediate Level" },
-        { name: "JS/jQuery", percent: 70, text: "Intermediate Level" },
-        { name: "ReactJS", percent: 70, text: "Intermediate Level" },
-        { name: "Python", percent: 70, text: "Intermediate Level" },
-      ]
-    }
+    #{
+    #  type: "Code Skills",
+    #  progress_bar_type: "progress-bar-3",
+    #  skills: [
+    #    { name: "HTML/CSS", percent: 90, text: "Proficient" },
+    #    { name: "Java", percent: 90, text: "Proficient" },
+    #    { name: "C", percent: 90, text: "Proficient" },
+    #    { name: "C++", percent: 90, text: "Proficient" },
+    #    { name: "C#", percent: 90, text: "Proficient" },
+    #    { name: "NodeJS", percent: 70, text: "Intermediate Level" },
+    #    { name: "MySQL", percent: 70, text: "Intermediate Level" },
+    #    { name: "JS/jQuery", percent: 70, text: "Intermediate Level" },
+    #    { name: "ReactJS", percent: 70, text: "Intermediate Level" },
+    #    { name: "Python", percent: 70, text: "Intermediate Level" },
+    #  ]
+    #}
       
     =end
   ],
