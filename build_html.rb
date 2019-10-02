@@ -117,8 +117,6 @@ vars = {
     #    { name: "Python", percent: 70, text: "Intermediate Level" },
     #  ]
     #}
-      
-    =end
   ],
 
   portfolio: [
