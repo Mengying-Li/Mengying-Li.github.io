@@ -8,31 +8,57 @@ include ActionView::Helpers::TextHelper
 vars = {
   full_name: "Mengying Li",
 
-  title: "3rd year Math & CS Student",
+  title: "5th year Math & CS Student",
 
   profile_categories: {
-    "Availability" => content_tag(:p, "Looking for a summer internship.")
+    "Availability" => content_tag(:p, "Looking for a full time software engineering position.")
   },
 
   education: [
     {
       diploma: "Math & Computer Science joint major",
       school: "University of California, San Diego (UCSD)",
-      year: "2015 - 2019 (expected)",
-      description: content_tag(:p, "Major GPA: 3.6") +
-                   content_tag(:p, "Relevant Coursework: Data Structure and Objective Oriented Design, Web Design, Advanced Data Structures, Design and Analysis of the Algorithms, Software Engineering, Intro to Machine Learning")
+      year: "2015 - 2019 Dec(expected)",
+      description: content_tag(:p, "Major GPA: 3.65") +
+                   content_tag(:p, "Relevant Coursework: Objective Oriented Design, Advanced Data Structures, Software Engineering, Design and Analysis of the Algorithms, Machine Learning, Operating System, Recommender System")
     }
   ],
 
   work_experiences: [
     {
+      job_title: "Software Engineer Intern",
+      company: "Teradata",
+      location: "San Diego, USA",
+      date: "06/2019 to now",
+      description: content_tag(:p, "Designed and implemented generic incident model architecture in python and improved SAM (AI-powered automation service recommending solution to known software crash)") +
+                   content_tag(:p, "Handled more generalized crashes and increased crashes processed by SAM by 20% in Q3 and 130% in Q4") +
+                   content_tag(:p, "Refactored code from inheritance to composition making it more maintainable, robust, flexible and scalable")
+    },
+    {
+      job_title: "Software Engineer Intern",
+      company: "American Specialty Health",
+      location: "San Diego, USA",
+      date: "03/2017 to 06/2017",
+      description: content_tag(:p, "Prototyped multiple proof of concept (POC) Android app for people having trouble sleeping in Java") +
+                   content_tag(:p, "Built advertising websites for front door experiment utilizing Google Ads to find target group of customer")
+    },
+    {
+      job_title: "Software Engineer Intern",
+      company: "Nanome Inc",
+      location: "San Diego, USA",
+      date: "06/2017 to 09/2017",
+      description: content_tag(:p, "Designed, implemented and tested DSSP algorithm (hydrogen bond estimation) described in paper in C#") +
+                   content_tag(:p, "Optimized runtime of DSSP algorithm, improved the speed by 80% and achieved accuracy over 97%") +
+                   content_tag(:p, "Developed keyword search function inside the application by making API requests and writing web crawler") +
+                   content_tag(:p, "Troubleshot and resolved race condition and networking issues spotted in the front end of keyword search")
+    },
+    {
       job_title: "Software Developer Intern",
       company: "Nanome Inc",
       location: "San Diego, USA",
       date: "06/2017 to 09/2017",
-      description: content_tag(:p, "Implemented a notification board feature in existing VR application using C# in unity") +
-                   content_tag(:p, "Built a 2D portal for people to enter the biology conference room in application using C#") +
-                   content_tag(:p, "Parsed MMCIF format file from the World Protein Bank to the application in C#")
+      description: content_tag(:p, "Parsed MMCIF format file from the World Protein Bank to the application and optimized algorithm 50% faster") +
+                   content_tag(:p, "Developed a notification board feature after a series of design experiments in VR application in unity in C#")
     },
     {
       job_title: "Full Stack Developer",
@@ -42,8 +68,7 @@ vars = {
       description: content_tag(:p, "Designed and implemented a website using nodeJS, mySQL, Handlebars to handle data about primates") +
                    content_tag(:p, "Coded features such as authentication, data administration, search, …") +
                    content_tag(:p, "Prepared and presented technical and design proposals to the 20 lab members") +
-                   content_tag(:p, "Troubleshooted and resolved issues reported by end-users") +
-                   content_tag(:p, "Github link: https://github.com/chasingfuture/Database_website")
+                   content_tag(:p, "Troubleshooted and resolved issues reported by end-users")
     },
     {
       job_title: "District Conference Secretary General, Club Leader",
@@ -74,7 +99,9 @@ vars = {
         { name: "Chinese", percent: 100, text: "Native Language" },
         { name: "English", percent: 90, text: "Advanced Level (TOEFL 109)" }
       ]
-    },
+    } #,
+    =begin
+      
     {
       type: "Code Skills",
       progress_bar_type: "progress-bar-3",
@@ -84,16 +111,15 @@ vars = {
         { name: "C", percent: 90, text: "Proficient" },
         { name: "C++", percent: 90, text: "Proficient" },
         { name: "C#", percent: 90, text: "Proficient" },
-        { name: "MATLAB", percent: 90, text: "Proficient" },
         { name: "NodeJS", percent: 70, text: "Intermediate Level" },
         { name: "MySQL", percent: 70, text: "Intermediate Level" },
         { name: "JS/jQuery", percent: 70, text: "Intermediate Level" },
-        { name: "React", percent: 70, text: "Intermediate Level" },
+        { name: "ReactJS", percent: 70, text: "Intermediate Level" },
         { name: "Python", percent: 70, text: "Intermediate Level" },
-        { name: "R", percent: 70, text: "Intermediate Level" },
-        { name: "Assembly", percent: 70, text: "Intermediate Level" },
       ]
     }
+      
+    =end
   ],
 
   portfolio: [
